@@ -1,1 +1,1 @@
-# TekwillJava
+# TekwillJava for education
