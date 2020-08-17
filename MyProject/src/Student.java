@@ -39,6 +39,11 @@ public class Student {
     }
 
     @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -52,5 +57,8 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(fio, data, kurs, bursa);
+    }
+    void displayInfo(){
+        System.out.printf("fio: %s \t Datar: %s \t Kurs: %d \t Stipen: %.2f \n",fio ,data,kurs,bursa);
     }
 }
