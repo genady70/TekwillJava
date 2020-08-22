@@ -1,19 +1,14 @@
 public class Main {
-
     public static void main(String[] args) {
-	byte b=-15;
-	short s=12000;
-	int i=40000;
-	long l=87000L;
-	float f=4.25f;
-	double d=12.21;
-	char c='x';
-	String s1="str1";
-	boolean b1=true;
-		System.out.println(b+s);
-		System.out.println(	l+i);
-		System.out.println(d/f);
-		System.out.println(c+'y'+'z'+s1);
-		System.out.println(b1);
-    }
-}
+    Up1 o1=new Up1();
+    o1.m2("dfgfd","fdffd");
+    int k=o1.m4('y');
+    String s=o1.m3();
+    System.out.print("  "+k+"  "+s);
+    Up2 o2=new Up2();
+    o2.afis1(7);
+    System.out.println();
+    o2.afis2(8);
+    System.out.println();
+    o2.hello();o2.sumN(6);
+}}
